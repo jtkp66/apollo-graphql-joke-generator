@@ -27,30 +27,7 @@ const RootQuery = new GraphQLObjectType({
         }
     }
 });
-// const RootQuery = new GraphQLObjectType({
-//     name: 'RootQueryType',
-//     fields: {
-//         jokes: {
-//             type: new GraphQLList(JokeType),
-//             resolve(parent, args) {
-//                 return axios
-//                 .get('https://api.spacexdata.com/v3/launches')
-//                 .then(res => res.data);
-//             }
-//         }
-//     }
-// });
 
 module.exports = new GraphQLSchema({
     query: RootQuery
 });
-
-
-// {
-//     Name: "Kenny Britt",
-//     Team: "TEN",
-//     Team_name: "Titans",
-//     Team_city: "Nashville",
-//     Position: "WR",
-//     arrest_count: "7",
-//     },
